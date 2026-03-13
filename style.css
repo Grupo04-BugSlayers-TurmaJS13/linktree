@@ -1,0 +1,132 @@
+:root {
+   --black-main-color:#1c1c1c;
+   --gray-main-color: #D3D3D3;
+   --gray-main-color2:#F2F5F5; 
+   --cinza2:#757575;
+   --roxo: #b478bb;
+   --destaque: #de9459;
+} 
+
+*{     
+   margin: 0;
+   padding:0;
+   box-sizing: border-box;    
+}
+
+body {
+
+    background-color: var(--black-main-color);
+background: #4a2166;
+background: radial-gradient(circle, rgba(74, 33, 102, 1) 0%, rgba(74, 36, 77, 1) 14%, rgba(36, 18, 38, 1) 44%, rgba(0, 0, 0, 1) 100%);
+    user-select: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+    width: 360px;
+    text-align: center;
+    margin: 20px auto;
+    padding: 30px 10px;
+    background-color: var(--black-main-color);
+    /* height: 90vh; */
+    /* color: var(--gray-main-color); */
+    
+    border-radius: 8px;
+    /* border: 2px solid black; */
+}
+
+img {
+    width: 300px;
+}
+
+h1 {
+    font-size: 18px;
+    color: var(--roxo);
+    margin:10px 0 25px 0;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 16px;
+    margin-top: 20px;   
+}
+
+p {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 20px 0;
+    font-family: monospace;
+    /* text-align: left; */
+    font-weight: lighter;
+    color: var(--destaque);
+    /* font-weight: 200;
+    font-variation-settings:
+        "wdth" 80; */
+}
+
+ul {
+    margin: 15px 0;
+    list-style: none;  
+    /* width: 290px;  */
+}
+
+li {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+ul li a {
+    background-color: var(--gray-main-color);
+    height: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    color: black;
+    text-decoration: none;
+    transition: background 500ms;
+}
+
+ul li a:hover {
+    background-color: var(--roxo);
+    font-weight: bold;
+}
+
+
+
+#icon {
+    width: 25px;
+    margin: 0 5px 0 0;
+}
+
+
+
+/* tela-grande */
+@media screen and (min-width: 1601px) {
+    .content {
+        width: 500px;
+    }
+
+    img {
+        width: 200px;
+        margin: 50px auto 20px;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    ul li a {
+        font-size: 18px;
+        height: 35px;
+        width: 300px;
+    }
+
+}
