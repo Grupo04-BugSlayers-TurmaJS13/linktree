@@ -1,24 +1,24 @@
 :root {
-   --black-main-color:#1c1c1c;
-   --gray-main-color: #D3D3D3;
-   --gray-main-color2:#F2F5F5; 
-   --cinza2:#757575;
-   --roxo: #b478bb;
-   --destaque: #de9459;
-} 
+    --black-main-color: #1c1c1c;
+    --gray-main-color: #D3D3D3;
+    --gray-main-color2: #f8f8f8;
+    --cinza2: #757575;
+    --destaque1: #7cbde3;
+    --destaque: #de9459;
+}
 
-*{     
-   margin: 0;
-   padding:0;
-   box-sizing: border-box;    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
 
     background-color: var(--black-main-color);
-background: #4a2166;
-background: radial-gradient(circle, rgba(74, 33, 102, 1) 0%, rgba(74, 36, 77, 1) 14%, rgba(36, 18, 38, 1) 44%, rgba(0, 0, 0, 1) 100%);
-    user-select: none;
+    background: #000000;
+    background: linear-gradient(135deg, rgb(35, 35, 35) 10%, rgb(13, 13, 69) 60%, rgb(50, 50, 101) 98%, rgb(53, 68, 119) 100%);
+
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -27,10 +27,10 @@ background: radial-gradient(circle, rgba(74, 33, 102, 1) 0%, rgba(74, 36, 77, 1)
     text-align: center;
     margin: 20px auto;
     padding: 30px 10px;
-    background-color: var(--black-main-color);
+    background-color: #00000070;
     /* height: 90vh; */
     /* color: var(--gray-main-color); */
-    
+
     border-radius: 8px;
     /* border: 2px solid black; */
 }
@@ -41,19 +41,20 @@ img {
 
 h1 {
     font-size: 18px;
-    color: var(--roxo);
-    margin:10px 0 25px 0;
+    color: var(--destaque1);
+    margin: 10px 0 25px 0;
     text-transform: uppercase;
+
 }
 
-h2{
+h2 {
     font-size: 16px;
-    margin-top: 20px;   
+    margin-top: 20px;
 }
 
 p {
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 18px;
     margin: 20px 0;
     font-family: monospace;
     /* text-align: left; */
@@ -66,7 +67,7 @@ p {
 
 ul {
     margin: 15px 0;
-    list-style: none;  
+    list-style: none;
     /* width: 290px;  */
 }
 
@@ -74,7 +75,7 @@ li {
     margin: 10px;
     display: flex;
     justify-content: center;
-    
+
 }
 
 ul li a {
@@ -84,14 +85,14 @@ ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
+    border-radius: 8px;
     color: black;
     text-decoration: none;
     transition: background 500ms;
 }
 
 ul li a:hover {
-    background-color: var(--roxo);
+    background-color: var(--destaque1);
     font-weight: bold;
 }
 
